@@ -1,0 +1,82 @@
+@device-maxwidth-small: 759px;
+@device-maxwidth-medium: 1024px;
+@device-maxwidth-large: 1440px;
+@device-maxwidth-extralarge: 1440px;
+
+//move accessibility button offscreen when out of focus
+a.accessibility-toggle.button {
+	top: -50px;
+	&:focus {
+		top:auto;
+	}
+}
+
+//restrict extrawidescreen views
+.extrawidescreen {
+	&.small {
+	  max-width: @device-maxwidth-small;
+	  margin: 0 auto;
+	  background: #eee;
+	  position: relative;
+	    .navigation {
+			max-width: @device-maxwidth-small;
+		}
+	}
+	&.medium {
+	  max-width: @device-maxwidth-medium;
+	  margin: 0 auto;
+	  background: #eee;
+	  position: relative;
+		.navigation {
+			max-width: @device-maxwidth-medium;
+		}
+	}
+	&.large {
+	  max-width: @device-maxwidth-large;
+	  margin: 0 auto;
+	  background: #eee;
+	  position: relative;
+		.navigation {
+			max-width: @device-maxwidth-large;
+		}
+	}
+	&.extralarge {
+	  max-width: @device-maxwidth-large;
+	  margin: 0 auto;
+	  background: #eee;
+	  position: relative;
+		.navigation {
+			max-width: @device-maxwidth-large;
+		}
+	}
+}
+
+.widescreen {
+	&.small {
+
+	}
+	&.medium {
+
+	}
+	&.large {
+		
+	}
+	&.extralarge {
+
+	}
+}
+
+.screen {
+	&.small {
+
+	}
+	&.medium {
+
+	}
+	&.large {
+		
+	}
+	&.extralarge {
+
+	}
+}

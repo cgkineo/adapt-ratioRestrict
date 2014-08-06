@@ -1,0 +1,14 @@
+{
+  "name": "adapt-ratioRestrict",
+  "homepage": "https://github.com/cgkineo/adapt-ratioRestrict",
+  "authors": [
+    "Oliver Foster <oliver.foster@kineo.com"
+  ],
+  "description": "%description",
+  "main": "/js/adapt-ratioRestrict.js",
+  "keywords": [
+    "adapt-plugin",
+    "adapt-extension"
+  ],
+  "license": "GPLv3"
+}
