@@ -1,0 +1,20 @@
+//ON EXTRA WIDESCREEN
+html.extrawidescreen {
+	//NOTIFY REALIGN 
+	.notify-popup {
+		left: 0px;
+	}
+
+	//stop horizonal scrollbar
+	overflow-x: hidden;
+
+}
+
+
+//move accessibility button offscreen when out of focus
+a.accessibility-toggle.button {
+	top: -50px;
+	&:focus {
+		top:auto;
+	}
+}

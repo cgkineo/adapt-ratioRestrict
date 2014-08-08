@@ -9,7 +9,6 @@ define(function(require) {
 	var Adapt = require('coreJS/adapt');
 	var Backbone = require('backbone');
 
-
 	var ratioRestrict = {
 		//apply relevant style for aspect ratio and screen size type
 		applyStyles: function() {
@@ -29,10 +28,12 @@ define(function(require) {
 
 		//calculate screen ratio and screen size type
 		getScreenSize: function() {
-			var height = replacementHeight.call($(window));
-			var width = replacementWidth.call($(window));
+			var height = replacementHeight.orig.call($(window));
+			var width = replacementWidth.orig.call($(window));
 
 			var ratio = Math.floor(width/height*100)/100;
+
+			console.log(ratio);
 
 			var aspectratio = 
 				(ratio > (16/9))
@@ -64,7 +65,7 @@ define(function(require) {
 		}
 	};
 
-	//replace jquery height and width function to restrict window height and width values
+	//replace jquery height and width functions to restrict window height and width values
 	var replacementHeight = function() {
 		if (this[0] === window && arguments.length === 0) {
 			var h = replacementHeight.orig.call(this);
